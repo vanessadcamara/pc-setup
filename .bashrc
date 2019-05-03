@@ -4,7 +4,5 @@ if [ "$TMUX" == "" ]; then
 fi
 
 set -o vi
-bind '"jk":"\e"'
-alias c="clear"
 alias ll='ls -alF'
 alias lt='clear; tree -a -L '

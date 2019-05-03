@@ -5,7 +5,7 @@ call plug#end()
 
 " vundle configuration
 set nocompatible
-filetype off                  
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
@@ -19,12 +19,6 @@ call vundle#end()
 filetype plugin indent on   
 
 "keymap - general
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-imap jk <Esc>
-imap kj <Esc>
 
 "avoid creation of swap files
 set noswapfile
