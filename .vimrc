@@ -19,6 +19,12 @@ call vundle#end()
 filetype plugin indent on   
 
 "keymap - general
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+imap jk <Esc>
+imap kj <Esc>
 
 "avoid creation of swap files
 set noswapfile
@@ -57,3 +63,9 @@ augroup OpenAllFoldsOnFileOpen
     autocmd!
     autocmd BufRead * normal zR
 augroup END
+
+" Resize panes
+nmap 0 :vertical res-5<CR>
+nmap 7 :vertical res+5<CR>
+nmap 8 :res-5<CR>
+nmap 9 :res+5<CR>
